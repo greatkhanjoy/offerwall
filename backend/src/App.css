@@ -1,0 +1,83 @@
+.sidebar {
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+.top_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  line-height: 30px;
+  padding-top: 10px;
+}
+
+.bars {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu_link {
+  display: flex;
+  color: #697a8d;
+  gap: 10px;
+  padding: 10px 10px;
+}
+
+.menu_link:hover{
+    border-right: 3px solid #696cff;
+    transition: 0.2s cubic-bezier(0.6, 0, -0.28, 0.045); 
+    background: rgba(67, 89, 113, 0.04)
+}
+
+.icon {
+  font-size: 1.5rem;
+  padding-right:10px;
+  padding-left:10px;
+}
+.link_text {
+  font-size: 0.9375rem;
+}
+
+.menu_link.active{
+    background: #696cff;
+    color: #ffffff;
+}
+
+.layout-overlay{
+    z-index: 9 !important;
+}
+
+.with_sub_menu{
+  color: #697a8d;
+  gap: 10px;
+  position: relative;
+}
+
+.with_sub_menu .arrow-icon{
+    position: absolute;
+    right: 2px;
+    top:13px;
+    color: #697a8d;
+}
+
+.with_sub_menu.active .arrow-icon{
+    color: #ffffff;
+}
+
+.sub_menu{
+    padding-left:20px;
+    padding-top: 5px;
+}
+
+.sub_menu .link_text{
+    font-size: 0.875rem;
+}
+
+.sub_menu .icon{
+    font-size: 1.25rem;
+}
